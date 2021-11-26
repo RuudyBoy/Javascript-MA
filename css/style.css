@@ -1,17 +1,16 @@
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-
 * {
     box-sizing: border-box;
 }
 
 body {
-    background: #ebebeb;
+    background: black;
     font-family: "Open Sans", sans-serif;
 }
 
 h1 {
     margin-left: 1rem;
+    color: white;
 }
 
 .container {
@@ -19,27 +18,34 @@ h1 {
     margin: 0 auto;
 }
 
-.results {
-    display: flex;
-    flex-wrap: wrap;
+.product {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border: 2px solid blueviolet;
 }
 
-.result {
-    margin: 1rem;
-    padding: 1rem;
-    max-width: 200px;
-    background: white;
-    border: 1px solid grey;
-    border-radius: 1rem;
+input {
+    padding: 10px;
+    margin-bottom: 5px;
 }
 
 .loader {
-    border: 10px solid black;
+    border: 10px solid white;
     border-top: 10px solid blueviolet;
     border-radius: 50%;
     width: 150px;
     height: 150px;
     animation: spin 0.5s linear infinite;
+}
+
+.message {
+    color: red;
+}
+
+.message .error {
+    color: red;
 }
 
 @keyframes spin {

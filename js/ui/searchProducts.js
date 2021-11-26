@@ -7,10 +7,10 @@ export function searchProducts(products) {
 
         console.log(event);
 
-        const searchValue = event.target.value.trim().toLowerCase();
+        const searchValue = event.target.value.trim();
 
         const filteredProducts = products.filter(function (product) {
-            if (product.full_name.toLowerCase().startsWith(searchValue)) {
+            if (product.price >= (searchValue)) {
                 return true;
             }
         });
@@ -18,3 +18,6 @@ export function searchProducts(products) {
         renderProducts(filteredProducts);
     };
 }
+
+
+
